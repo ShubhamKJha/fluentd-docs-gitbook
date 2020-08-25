@@ -29,8 +29,7 @@ The definition specifies that a HTTP server will be listening on TCP
 port `8888`.
 
 Now, let's define a **Matching** rule to print the incoming requests to the
-standard output:
-
+standard output
 ```
 <match test.cycle>
   @type stdout
@@ -107,7 +106,7 @@ record: {"user":"-","method":"GET","code":200,"size":777,"host":"192.168.0.1","p
 ## Processing Events
 
 When a **Setup** is defined, the **Router Engine** contains several predefined
-rules to apply to different input data. Internally, an **Event** will to pass
+rules to apply to different input data. Internally, an **Event** will pass
 through a chain of procedures that may alter its lifecycle.
 
 Now, we will expand on our previous basic example and we will add more steps in
